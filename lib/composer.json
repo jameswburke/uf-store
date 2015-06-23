@@ -1,0 +1,13 @@
+{
+    "name": "umbrellafish/store",
+    "description": "Simple store plugin for wordpress",
+    "require": {
+        "stripe/stripe-php": "~2.1"
+    },
+    "authors": [
+        {
+            "name": "jameswburke",
+            "email": "james.walter.burke@gmail.com"
+        }
+    ]
+}
