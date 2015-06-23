@@ -77,34 +77,6 @@ class UFStore{
 
 
 	protected function loadLibraries(){
-		//Third Paty Libraries
-		// require_once ('stripe-php-2.1.2/lib/Stripe.php');
-		// require_once ('stripe-php-2.1.2/lib/Util/Set.php');
-		// require_once ('stripe-php-2.1.2/lib/Util/RequestOptions.php');
-		// require_once ('stripe-php-2.1.2/lib/Util/Util.php');
-		// require_once ('stripe-php-2.1.2/lib/Error/Base.php');
-		// require_once ('stripe-php-2.1.2/lib/Error/InvalidRequest.php');
-		// require_once ('stripe-php-2.1.2/lib/Object.php');
-		// require_once ('stripe-php-2.1.2/lib/ApiRequestor.php');
-		// require_once ('stripe-php-2.1.2/lib/ApiResource.php');
-		// require_once ('stripe-php-2.1.2/lib/SingletonApiResource.php');
-		// require_once ('stripe-php-2.1.2/lib/Charge.php');
-
-		// $files = glob('stripe-php-2.1.2/lib/*.php');
-		// foreach ($files as $file) {
-		//     require_once($file);   
-		// }
-
-		// $files = glob('stripe-php-2.1.2/lib/Error/*.php');
-		// foreach ($files as $file) {
-		//     require_once($file);   
-		// }
-
-		// $files = glob('stripe-php-2.1.2/lib/Util/*.php');
-		// foreach ($files as $file) {
-		//     require_once($file);   
-		// }
-
 		//General settings and what-nots
 		require_once('uf-store.acf.functions.php');
 		require_once('uf-store.ajax.functions.php');
