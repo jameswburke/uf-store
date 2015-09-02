@@ -76,7 +76,7 @@ class UFStoreCartCheckout{
 	public static function saveOrder($customer, $cart_info, $cart, $cart_subtotal, $cart_shipping, $cart_total){
 		$date = new DateTime();
 		$post = array(
-			'post_title' => sanitize_text_field($date->format('Y-m-d H:i:s')),
+			'post_title' => $customer['name'].': '.sanitize_text_field($date->format('Y-m-d H:i:s')),
 			'post_type' => 'ufstore_order',
 			'post_status' => 'publish'
 		);
@@ -89,7 +89,8 @@ class UFStoreCartCheckout{
 			$address_string .= $customer['address2']."\n";
 			$address_string .= $customer['city'].", ";
 			$address_string .= $customer['state'].' ';
-			$address_string .= $customer['zipcode'];
+			$address_string .= $customer['zipcode']."\n";
+			$address_string .= $customer['country'];
 			
 			//Customer Info
 			update_field('field_553545e7e553c', $customer['name'], $post_id);
